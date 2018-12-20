@@ -1,0 +1,18 @@
+namespace "xsa-db-organisations".organisations;
+
+context organisations {
+
+	entity entities{
+		key id: Integer;
+		name: String(50);
+		revenue: Double;
+		address: association to building;
+	};
+	
+	entity building {
+		key id: Integer;
+		name: String(50);
+		location: String(255);
+	};
+	
+};

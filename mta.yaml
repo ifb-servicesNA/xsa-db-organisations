@@ -1,0 +1,16 @@
+ID: xsa-db-organisations
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: organisations
+   type: hdb
+   path: organisations
+   requires:
+    - name: hdi_organisations
+
+resources:
+ - name: hdi_organisations
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
