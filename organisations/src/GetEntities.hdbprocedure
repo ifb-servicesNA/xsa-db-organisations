@@ -1,0 +1,13 @@
+PROCEDURE "xsa-db-organisations.organisations::GetEntities"( )
+   LANGUAGE SQLSCRIPT
+   SQL SECURITY INVOKER
+   --DEFAULT SCHEMA <default_schema_name>
+   READS SQL DATA AS
+BEGIN
+   /*************************************
+       Write your procedure logic 
+   *************************************/
+   
+   select * from "xsa-db-organisations.organisations::organisations.entities";
+   
+END
