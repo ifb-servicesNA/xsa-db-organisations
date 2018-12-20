@@ -12,4 +12,4 @@ This micro db module will later be consumed by the companies module.
 
 Since this is a totally standalone db module, this can have a independant application lifecycle of it's own.
 All deployments should be patch incremented, so that the parent module can keep using older versions, in case of a backwards
- incomaptible change in this child module.
+ incompatible change in this child module is made.
