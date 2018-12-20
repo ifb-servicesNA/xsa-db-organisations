@@ -1,3 +1,6 @@
+/**
+* fetches list of entities
+*/
 PROCEDURE "xsa-db-organisations.organisations::GetEntities"( )
    LANGUAGE SQLSCRIPT
    SQL SECURITY INVOKER

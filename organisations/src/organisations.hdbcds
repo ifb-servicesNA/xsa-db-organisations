@@ -1,15 +1,25 @@
+/**
+* A standalone context representing 
+* organisations with entities table 
+* and buildings table
+*/
 namespace "xsa-db-organisations".organisations;
 
 context organisations {
 
+	/**
+	* These tables below will later be used for 
+	* demonstrating procedure calls in a parent
+	* module
+	*/
 	entity entities{
 		key id: Integer;
 		name: String(50);
 		revenue: Double;
-		address: association to building;
+		address: association to buildings;
 	};
 	
-	entity building {
+	entity buildings {
 		key id: Integer;
 		name: String(50);
 		location: String(255);

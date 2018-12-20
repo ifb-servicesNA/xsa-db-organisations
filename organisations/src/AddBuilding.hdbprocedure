@@ -1,3 +1,6 @@
+/**
+* inserts a new building
+*/
 PROCEDURE "xsa-db-organisations.organisations::AddBuilding"( 
 	in id Integer,
 	in name nvarchar(50)
@@ -10,7 +13,7 @@ BEGIN
    /*************************************
        Write your procedure logic 
    *************************************/
-   insert into "xsa-db-organisations.organisations::organisations.building"("id","name")
+   insert into "xsa-db-organisations.organisations::organisations.buildings"("id","name")
    values (:id,:name);
    
 END
