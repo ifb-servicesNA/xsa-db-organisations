@@ -1,2 +1,2 @@
-# xsa-db-organistions
+# xsa-db-organisations
 Demonstrating micro xsa db modules
