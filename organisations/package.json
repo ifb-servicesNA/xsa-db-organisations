@@ -1,5 +1,6 @@
 {
-    "name": "deploy",
+    "name": "organisations",
+    "version":"1.0.0",
     "dependencies": {
         "@sap/hdi-deploy": "3.7.0"
     },
